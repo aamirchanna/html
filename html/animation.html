@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+.box{
+    background-color: saddlebrown;
+    width:340px;
+    height:340px;
+    position:relative;
+    animation-name: aamir;
+    animation-duration: 2s;
+    
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+    /* ease in means in starting slow gradually increase 
+    ease out opposite to this 
+    dealay at start*/
+    animation-direction: reverse;
+}
+@keyframes aamir {
+    from{
+    top:233px;
+    }
+    to{
+     down:200px;
+    }
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is box where we can apply animation</div>
+    </div>
+</body>
+</html>

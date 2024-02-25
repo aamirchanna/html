@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+
+
+    <style>
+    .box {
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        background-color: blueviolet;
+        display: none;
+    }
+    /* jo jo condtition true hogi wo krdo like if and else use this for responsive website */
+
+    @media (max-width: 300px) {
+        #box1 {
+            display: block;
+            color: darkgreen;
+            background-color: azure;
+        }
+    }
+
+    @media (max-width: 500px) {
+        #box2 {
+            display: block;
+            color: rgb(168, 15, 15);
+            background-color: azure;
+        }
+    }
+    @media (max-width: 700px) and (min-width : 1000) {
+        #box3 {
+            display: block;
+            color: rgb(209, 173, 12);
+            background-color: azure;
+        }
+    }
+    @media (max-width: 800px) {
+        #box4 {
+            display: block;
+            color: darkgreen;
+            background-color: rgb(4, 67, 67);
+        }
+    }
+</style>
+
+</head>
+<body>
+     <div class="box" id="box1">this is computer</div>
+     <div class="box" id="box2">this is tablet</div>
+     <div class="box" id="box3">this is laptop</div>
+     <div class="box" id="box4">this is mobile</div>
+</body>
+</html>

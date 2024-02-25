@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visility and Z index</title>
+<style>
+    .box{
+        position: relative;
+        top:22px;
+        width:200px;
+        z-index: -12;
+        border:3px;
+        padding:23px;
+    }
+    #box1{
+     background-color: black;
+     color:white;
+    }
+    
+    #box2{
+     /* z-index overlap the box to another box using postion=absoloute.realtive or fix    */
+    /* visibility: hidden; place of box reserved but for remove write disply none */
+     /* display: none; hide element and boxplace */
+     position:relative;
+     z-index: -2;
+     top:23px;
+     background-color: rgb(116, 79, 46);
+     color:white;
+    }
+    
+    #box3{
+     background-color: rgb(116, 7, 7);
+     color:white;
+    }
+    
+    #box4{
+     background-color: rgb(207, 22, 22);
+     color:white;
+    }
+</style>
+
+
+
+</head>
+<body>
+    <div class="box" id="box1">we</div>
+    <div class="box" id="box2">are</div>
+    <div class="box" id="box3">here</div>
+    <div class="box" id="box4">in room</div>
+</body>
+</html>

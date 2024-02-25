@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        border:3px solid rgb(234, 12, 12);
+        margin: 5px;
+        width:100px;
+        display : inline-block;
+        height: 100px;
+    }
+    #box3{
+        /* position:static = default and fixed remain fix when scholl like chat button box
+        sticky when it stick to upp like any menu in top stick when srcoll */
+        /* relative means relative to its normal postion */
+        position: relative;
+        top:32px;
+        left:23px;
+    }
+    #box2{
+        /* abolute means change accord to parent box */
+        position : absolute;
+        left:23px;
+        top:23px;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

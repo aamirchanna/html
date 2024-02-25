@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+    body{
+            background-color:darkcyan;
+        }
+    .container{
+        height: 544px; 
+        width: 100%;
+        border:5px solid rgb(244, 240, 244);
+        display:flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        /* flex-direction:column; */
+        /* flex-direction: row; by default */
+    
+        /* flex-flow:row wrap; */
+       justify-content:flex-start;
+       /* align-items: center; verticaly center */
+    }
+  .item{
+       
+       width:100%;
+       height:10%;
+       border:2px solid rgb(44, 34, 34);
+       margin :10px;
+       padding: 3px;
+       background-color: brown;
+  }
+  #box1{
+    /* higher the order later up the shows */
+    order: 3;
+  }
+  #box2{
+    order:34;
+    flex-shrink:13;
+/* srhink when zoom out  */
+  }
+    </style>
+</head>
+<body>
+    <h1>This flex box</h1>
+    <div class="container">
+     <div 
+     class="item" id="item-1">fruit</div>
+     <div class="item" id="item-2">tomato</div>
+     <div class="item" id="item-3">Biscuits</div>
+     <div class="item" id="item-4">bottles</div>
+     <div class="item" id="item-5">Coffee</div>
+     <div class="item" id="item-6">Sugardaddy</div>
+
+    </div>
+
+</body>
+</html>

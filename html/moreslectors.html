@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+<style>
+    body{
+       background-color:rgb(165, 164, 164);
+    }
+    h1{
+        background-color: black;
+        color:aliceblue;
+        text-align: center;
+        font-size: 34px;
+    }
+    /* all paragraph which in div= div p{} */
+
+    div + p{
+/* means div k nechy jo bhi paragarph ho css apply krdo */
+        background-color: rgb(210, 119, 8);
+        color:rgb(3, 82, 151)
+    }
+</style>
+</head>
+<body>
+    
+    <h1>this is selector</h1>
+   <div class="para">
+    <p>this is inner paragrapgh</p>
+   </div>
+   <div>
+    <p>this is middle</p>
+   </div>
+   <p>this is outer most </p>
+</body>
+</html>

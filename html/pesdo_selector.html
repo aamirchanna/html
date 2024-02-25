@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pesdo slector</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(255, 245, 245);
+            margin: 0;
+            padding: 0;
+        }
+
+        header::before {
+            content: "";
+            background: url('picture.jpg') no-repeat center/cover;
+            position: absolute;
+            opacity: 0.2;
+            height: 100vh;
+            width: 100%;
+            top:0;
+            left:0;
+            z-index: -1;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: auto;
+            width: 4%;
+            padding: 39px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .navbar li:hover{
+            color:red;
+            transition:2s;
+        } 
+
+        section {
+            height: 344px;
+            /* border:2px solid red; */
+            margin: 2px 233px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        .loginbtn {
+
+
+            color: #ffff;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 21px;
+            float: right;
+            margin: 17px 4px;
+            padding: 6px 26px
+        }
+
+        .loginbtn:hover {
+            color: red;
+            transition: 2s;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Books</li>
+                <li>About Us</li>
+                <li>Service</li>
+                <button class="loginbtn">sign up</button>
+                <button class="loginbtn">login</button>
+            </ul>
+        </nav>
+        <section>
+            <h1>Welcome to the coding world</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas placeat tempore minima commodi
+                enim, inventore eligendi obcaecati ea excepturi adipisci minus necessitatibus ipsa vero saepe odio
+                suscipit nobis cumque architecto quaerat sequi iste.</p>
+        </section>
+    </header>
+</body>
+
+</html>

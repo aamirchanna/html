@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth psedo selectors</title>
+    <style>
+        a[target]:hover {
+            color: darkgoldenrod;
+            /* color:transparent; */
+
+        }
+
+        a[target] {
+            color: black;
+            font-size: 23px;
+            ;
+        }
+
+        a[target='selfblank'] {
+            color: darkcyan;
+        }
+
+        /* avoid space between them */
+        li:nth-child(4) {
+            color: rgb(202, 38, 74);
+        }
+
+        li:nth-child(odd) {
+            background-color: darkmagenta;
+        }
+
+        .container {
+
+            font-size: 35px;
+            margin: auto;
+            width: 650px;
+            padding: 34px;
+        }
+
+        input {
+            border: 1px solid black;
+            height: 32px;
+            display: block;
+        }
+
+        div input {
+            border: 2px solid blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="none" class="form control">
+
+
+            <div>
+                <p>Login</p>
+
+                <input type="text" placeholder="Enter name">
+                <input type="password" placeholder="Enter password">
+                <input type="submit" value="sumbit">
+            </div>
+            <a href="https://shaoorsindh.blogspot.com" target="blank">go to shaoorsindh</a>
+            <a href="https//:www.google.com" target="selfblank">go to google</a>
+        </form>
+        <ul>
+            <li class="item" id="list1">item1</li>
+            <li class="item" id="list2">item2</li>
+            <li class="item" id="list3">item3</li>
+            <li class="item" id="list4">item4</li>
+            <li class="item" id="list5">item5</li>
+            <li class="item" id="list6">item6</li>
+        </ul>
+    </div>
+</body>
+
+</html>

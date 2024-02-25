@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        
+    .navbar{
+        background-color:rgb(154, 148, 181);
+        border-radius: 35px;
+    }
+    
+    .navbar ul{
+        /* list jumpover each other no space between then use this*/ 
+        overflow:auto 
+    }
+    .navbar li{
+    padding :20px 20px;
+     float:left;
+     list-style: none;
+     
+    }
+    .navbar li a {
+     text-decoration: none;
+     color: bisque;
+    }
+    .navbar li a:hover{
+        cursor: pointer;
+        color:rgb(6, 5, 0) 
+        
+    }
+   
+    
+   .navbar input {
+          border-radius: 20px;
+          float: right;
+          padding: 2px 3px;
+          margin:20px;
+          width:127px;
+   }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <!-- use anchor tag <a></a> for reference when click it home goto home -->
+                <li><a href="">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Service</a></li>
+                <li><a>Contact us</a></li>
+                <div class="search ">
+                    <input type="text" name="search here" id="search" placeholder=" search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

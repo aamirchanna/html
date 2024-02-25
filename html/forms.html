@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form submission</title>
+    <style>
+    .navbar{
+      background-color:rgb(154, 148, 181);
+      border-radius: 35px;
+  }
+  
+  .navbar ul{
+      /* list jumpover each other no space between then use this*/ 
+      overflow:auto 
+  }
+  .navbar li{
+  padding :20px 20px;
+   float:left;
+   list-style: none;
+   
+  }
+  .navbar li a {
+   text-decoration: none;
+   color: bisque;
+  }
+  .navbar li a:hover{
+      cursor: pointer;
+      color:rgb(6, 5, 0) 
+  }
+
+ .navbar input {
+        border-radius: 20px;
+        float: right;
+        padding: 2px 3px;
+        margin:20px;
+        width:127px;
+ }
+   body{
+    background-color: rgb(130, 171, 237);
+   }
+   .cont{
+   width:500px;
+   /* padding : 25px 25px; */
+    margin : auto 500px;
+  }
+   .contbtn{
+    /* background-color: rgb(4, 17, 39); */
+    margin : auto 500px
+
+  } 
+    </style>
+  </head>
+<body>
+  <header>
+    <nav class="navbar">
+        <ul>
+            <!-- use anchor tag <a></a> for reference when click it home goto home -->
+            <li><a href="">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Service</a></li>
+            <li><a>Contact us</a></li>
+            <div class="search ">
+                <input type="text" name="search here" id="search" placeholder=" search this website">
+            </div>
+        </ul>
+    </nav>
+</header>
+
+
+   <!-- <div id="color" class="cont" > -->
+    <h2 id="color1" class="cont">Form submission</h2><br>
+    <form action="backend.php"></form>
+   <!-- backend call with the (name), name='MYNAME'  -->
+<!-- box depend on type -->
+   <div  id="color2" class="cont">
+    <label for="name"> Name:</label>
+     <input type="name" name="myname" id="name">
+       </div>
+       <br>
+    <div  id="color3" class="cont">   
+     roll : <input type="text" name="myRoll">   
+     </div>
+    <br>
+    <div  id="color4" class="cont">
+      <!-- label is used to jump here when u click on form email word it autmatically jump over the box for it creates the id first -->
+      <!-- id which is type help to recognize -->
+     <label for="email"> Email:</label> 
+     <input type="email" name="myEmail" id="email">
+    </div>
+    
+    <br>
+    <div  id="color5" class="cont">
+      <label for="email"> Date:</label>
+      <input type="date" name="date" id="date">     
+    </div>
+    <br>
+    <div  id="color6" class="cont">
+     <label for="Domicile"> Domicile : </label>
+     <select value="myDomicile" id="Domicile">
+     <option value="domicile">Domicile </option>
+     <option value="Rural">Rural</option>
+     <option value="Urban"> Urban</option>
+     </select>
+    </div>
+     <br>
+   <br>
+
+    <!-- options in select -->
+       <div id="color12" class="cont">
+      <label for="district"> District :</label>
+      <select name="mydistrict" id="district">
+      <option value="district">District</option>
+      <option value="sanghar"> Sanghar</option>
+      <option value="hyderabad">Hyderabad</option>
+      <option value="Nawadshah">Nawabshah</option>
+      <option value="khazdar"> khazdar</option>
+      </select>
+      <br>
+    </div>
+    <br>
+    <div id="color7" class="cont">
+      <label for="email"> Bonus:</label>
+      <input type="number" name="mybonus" id="bonus"> 
+    </div>
+    <br>
+    <div id="color8" class="cont">
+    <label for="checkbox"> Eligible : </label>
+    <input type="checkbox" name="check" id="checkbox">   
+    </div>
+    <br>
+
+    <!-- type and name give same check only box like male and female -->
+    <div id="color9" class="cont">
+    Gender : Male <input type="radio" name="mygender"> female <input type="radio" name="mygender">  other : <input type="radio" name="mygender">
+    </div>
+    <!-- if u want to information of user -->
+    <br> 
+    <div id="color13" class="cont">
+    <label for="myname"> why you want this scholarship :</label>
+    <br> <textarea name="myname" cols="60" rows="10" id="myname"></textarea> 
+  </div>
+    
+    <div id="color10" class="contbtn">
+      <br>
+     <input type="submit" total="submit now">
+    </div>
+    <div id="color11" class="cont">
+      <input type="reset" total="reset">
+    </div>
+  </div>
+
+</body>
+</html>
